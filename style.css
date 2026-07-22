@@ -73,6 +73,9 @@ body{
     line-height:1;
 
     text-shadow:0 5px 20px rgba(0,0,0,.35);
+    opacity:0;
+animation:fadeUp .9s ease forwards;
+animation-delay:.3s;
 
 }
 
@@ -85,7 +88,9 @@ body{
     font-size:18px;
 
     text-shadow:0 3px 10px rgba(0,0,0,.3);
-
+opacity:0;
+animation:fadeUp .9s ease forwards;
+animation-delay:.8s;
 }
 
 .hero-subtitle{
@@ -113,7 +118,9 @@ body{
     font-size:16px;
 
     opacity:.95;
-
+opacity:0;
+animation:fadeUp .9s ease forwards;
+animation-delay:1.3s;
 }
 
 .arrow{
@@ -490,5 +497,24 @@ letter-spacing:12px;
 margin:20px 0;
 
 opacity:.85;
+
+}
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
 
 }
