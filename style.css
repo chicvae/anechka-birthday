@@ -477,3 +477,18 @@ margin-bottom:25px;
 line-height:1.8;
 
 }
+/* ---------- Разделитель ---------- */
+
+.divider{
+
+text-align:center;
+
+font-size:34px;
+
+letter-spacing:12px;
+
+margin:20px 0;
+
+opacity:.85;
+
+}
