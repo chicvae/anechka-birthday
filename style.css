@@ -1,227 +1,404 @@
+/* -------------------- */
+/* Общие настройки */
+/* -------------------- */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:'Manrope',sans-serif;
-background:#F7F2EA;
-color:#2E2E2E;
-overflow-x:hidden;
+    font-family:'Manrope',sans-serif;
+    background:#F8F5EE;
+    color:#3A3A3A;
+    overflow-x:hidden;
 }
 
-/* ---------- Первый экран ---------- */
+.container{
+    width:min(90%,700px);
+    margin:auto;
+}
+
+/* -------------------- */
+/* Первый экран */
+/* -------------------- */
 
 .hero{
 
-height:100vh;
+    height:100vh;
 
-display:flex;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.12),
+    rgba(0,0,0,.35)),
+    url("IMG_4410.jpeg");
 
-justify-content:center;
+    background-size:cover;
 
-align-items:flex-end;
+    background-position:center top;
 
-padding:20px;
+    display:flex;
 
-background:
-linear-gradient(rgba(0,0,0,.12),rgba(0,0,0,.25)),
-url("IMG_4410.jpeg");
+    justify-content:center;
 
-background-size:cover;
+    align-items:flex-end;
 
-/* Самое главное */
-
-background-position:center top;
-
-background-repeat:no-repeat;
+    padding-bottom:60px;
 
 }
 
-/* ---------- Карточка ---------- */
+.hero-content{
 
-.card{
+    text-align:center;
 
-width:100%;
-max-width:420px;
+    color:white;
 
-margin-bottom:20px;
-
-padding:34px 28px;
-
-border-radius:30px;
-
-background:rgba(255,255,255,.18);
-
-backdrop-filter:blur(22px);
-
--webkit-backdrop-filter:blur(22px);
-
-border:1px solid rgba(255,255,255,.28);
-
-box-shadow:
-0 12px 40px rgba(0,0,0,.18);
-
-text-align:center;
-
-color:white;
+    animation:fade 1.2s ease;
 
 }
 
-/* ---------- Дата ---------- */
+.hero h1{
 
-.small{
+    font-family:'Cormorant Garamond',serif;
 
-font-size:15px;
+    font-size:64px;
 
-letter-spacing:5px;
+    font-weight:600;
 
-text-transform:uppercase;
+    line-height:1;
 
-opacity:.95;
-
-margin-bottom:22px;
+    text-shadow:0 5px 20px rgba(0,0,0,.35);
 
 }
 
-/* ---------- Заголовок ---------- */
+.hero-date{
 
-h1{
+    margin-top:14px;
 
-font-family:'Cormorant Garamond',serif;
+    letter-spacing:2px;
+
+    font-size:18px;
+
+    text-shadow:0 3px 10px rgba(0,0,0,.3);
+
+}
+
+.hero-subtitle{
+
+    margin-top:18px;
+
+    font-size:22px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    text-shadow:0 3px 10px rgba(0,0,0,.3);
+
+}
+
+.scroll{
+
+    display:inline-block;
+
+    margin-top:50px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    opacity:.95;
+
+}
+
+.arrow{
+
+    margin-top:10px;
+
+    font-size:28px;
+
+    animation:bounce 2s infinite;
+
+}
+
+/* -------------------- */
+/* Блоки */
+/* -------------------- */
+
+.section{
+
+    padding:90px 0;
+
+}
+
+.section:nth-child(even){
+
+    background:#FFFDF8;
+
+}
+
+.section h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#566B35;
+
+}
+
+.section h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.section p{
+
+    text-align:center;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+/* -------------------- */
+/* Календарь */
+/* -------------------- */
+
+.calendar{
+
+    width:210px;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.month{
+
+    background:#E9D96C;
+
+    padding:14px;
+
+    text-align:center;
+
+    font-weight:600;
+
+}
+
+.day{
+
+    font-size:90px;
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    padding:20px 0 5px;
+
+}
+
+.time{
+
+    text-align:center;
+
+    padding-bottom:25px;
+
+    font-size:22px;
+
+}
+
+/* -------------------- */
+/* Тайминг */
+/* -------------------- */
+
+.timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.event{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:18px 24px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+/* -------------------- */
+/* Кнопки */
+/* -------------------- */
+
+.button{
+
+    display:inline-block;
+
+    margin:25px auto 0;
+
+    padding:16px 34px;
+
+    background:#556B2F;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+}
+
+/* -------------------- */
+/* Финал */
+/* -------------------- */
+
+.footer{
+
+    padding:100px 20px;
+
+    background:#556B2F;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.footer h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:58px;
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    font-size:20px;
+
+}
+
+/* -------------------- */
+/* Анимации */
+/* -------------------- */
+
+@keyframes bounce{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(10px);
+}
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:none;
+
+}
+
+}
+
+/* -------------------- */
+/* Телефон */
+/* -------------------- */
+
+@media(max-width:600px){
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.hero-subtitle{
+
+font-size:20px;
+
+}
+
+.section h2{
+
+font-size:42px;
+
+}
+
+.section p{
+
+font-size:17px;
+
+}
+
+.day{
 
 font-size:72px;
 
-font-weight:600;
-
-line-height:.9;
-
-margin-bottom:25px;
-
 }
 
-/* ---------- Подзаголовок ---------- */
+.event{
 
-.subtitle{
+flex-direction:column;
 
-font-size:20px;
+gap:8px;
 
-line-height:1.7;
-
-margin-bottom:34px;
-
-}
-
-/* ---------- Кнопка ---------- */
-
-.button{
-
-display:block;
-
-width:100%;
-
-padding:20px;
-
-border-radius:100px;
-
-background:white;
-
-color:#556F31;
-
-text-decoration:none;
-
-font-size:22px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.button:hover{
-
-transform:translateY(-3px);
-
-}
-
-/* ---------- Следующий экран ---------- */
-
-.info{
-
-max-width:760px;
-
-margin:auto;
-
-padding:90px 25px;
-
-text-align:center;
-
-}
-
-.info h2{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:54px;
-
-color:#526B2D;
-
-margin-bottom:28px;
-
-}
-
-.info p{
-
-font-size:20px;
-
-line-height:1.9;
-
-color:#555;
-
-}
-
-/* ---------- Телефон ---------- */
-
-@media(max-width:430px){
-
-.hero{
-
-background-position:center top;
-
-padding:16px;
-
-}
-
-.card{
-
-padding:28px 22px;
-
-margin-bottom:14px;
-
-}
-
-h1{
-
-font-size:64px;
-
-}
-
-.subtitle{
-
-font-size:18px;
-
-}
-
-.button{
-
-font-size:18px;
-
-padding:18px;
+align-items:center;
 
 }
 
