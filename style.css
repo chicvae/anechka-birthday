@@ -22,8 +22,9 @@ background-image:url("IMG_4410.jpeg");
 
 background-size:cover;
 
-background-position:center 15%;
-
+background-position:center top;
+padding-top:40px;
+padding-bottom:40px;
 display:flex;
 
 justify-content:center;
