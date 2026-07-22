@@ -15,51 +15,59 @@ color:#2E2E2E;
 }
 
 .hero{
+
 height:100vh;
 
-background:
-linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.30)),
-url("IMG_4410.jpeg");
+background-image:url("IMG_4410.jpeg");
 
 background-size:cover;
+
 background-position:center top;
 
 display:flex;
+
 justify-content:center;
+
 align-items:flex-end;
 
-padding:20px;
+padding:25px;
+
 }
-.card{
+
+.overlay{
+
 width:100%;
-max-width:390px;
+max-width:430px;
+
+padding:34px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.18);
 
 backdrop-filter:blur(22px);
-background:rgba(255,255,255,.14);
 
-border:1px solid rgba(255,255,255,.25);
-
-border-radius:28px;
-
-padding:30px;
-margin-bottom:20px;
+border:1px solid rgba(255,255,255,.35);
 
 text-align:center;
 
 color:white;
+
+margin-bottom:40px;
+
 }
 
-.small{
+.date{
 
 font-size:14px;
 
-letter-spacing:3px;
+letter-spacing:4px;
 
 text-transform:uppercase;
 
-opacity:.9;
-
 margin-bottom:18px;
+
+opacity:.95;
 
 }
 
@@ -67,23 +75,23 @@ h1{
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:60px;
+font-size:68px;
 
 font-weight:600;
 
-line-height:1.15;
+line-height:.9;
 
-margin-bottom:18px;
+margin-bottom:20px;
 
 }
 
 .subtitle{
 
-font-size:18px;
+font-size:21px;
 
-line-height:1.7;
+line-height:1.6;
 
-margin-bottom:30px;
+margin-bottom:35px;
 
 }
 
@@ -91,17 +99,19 @@ margin-bottom:30px;
 
 display:inline-block;
 
-padding:16px 34px;
-
-border-radius:100px;
+padding:18px 42px;
 
 background:white;
 
-color:#526B2D;
+border-radius:100px;
 
 text-decoration:none;
 
 font-weight:700;
+
+font-size:20px;
+
+color:#526B2D;
 
 transition:.3s;
 
@@ -109,17 +119,17 @@ transition:.3s;
 
 .button:hover{
 
-transform:translateY(-3px);
+transform:translateY(-2px);
 
 }
 
 .info{
 
+padding:90px 30px;
+
 max-width:760px;
 
 margin:auto;
-
-padding:90px 25px;
 
 text-align:center;
 
@@ -129,17 +139,17 @@ text-align:center;
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:52px;
-
-margin-bottom:25px;
+font-size:54px;
 
 color:#526B2D;
+
+margin-bottom:30px;
 
 }
 
 .info p{
 
-font-size:20px;
+font-size:22px;
 
 line-height:1.9;
 
