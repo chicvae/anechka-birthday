@@ -238,33 +238,46 @@ body{
 /* Тайминг */
 /* -------------------- */
 
-.timeline{
+.day-card{
 
-    display:flex;
+max-width:500px;
 
-    flex-direction:column;
+margin:40px auto 0;
 
-    gap:18px;
+background:white;
 
-    margin-top:35px;
+padding:40px 30px;
+
+border-radius:26px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+text-align:center;
+
+}
+
+.day-time{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+color:#556B2F;
+
+margin-bottom:20px;
 
 }
 
-.event{
+.day-card p{
 
-    display:flex;
+margin:0;
 
-    justify-content:space-between;
+font-size:18px;
 
-    background:white;
-
-    border-radius:20px;
-
-    padding:18px 24px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
+line-height:1.8;
 
 }
+
 
 /* -------------------- */
 /* Кнопки */
